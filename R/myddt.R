@@ -1,12 +1,13 @@
-#' Title
+#' myddt
 #'
-#' @param df
-#' @param SPECIES
+#' @param df the DDT dataframe
+#' @param SPECIES the species to subset df with
 #'
-#' @return
+#' @return Named list of dataframe before subsetting, dataframe after subsetting, and relative frequency of RIVER values before subsetting
 #' @export
 #'
 #' @examples
+#' \dontrun{myddt(ddt, "CCATFISH")}
 myddt = function(df = ddt, SPECIES = "CCATFISH") {
   library(ggplot2)
   library(dplyr)
