@@ -2,7 +2,7 @@
 % Please edit documentation in R/myread.R
 \name{myread}
 \alias{myread}
-\title{Title}
+\title{myread}
 \usage{
 myread(csv, dird)
 }
@@ -15,7 +15,7 @@ myread(csv, dird)
 The data frame inside the csv file
 }
 \description{
-Title
+Reads .csv files
 }
 \examples{
 \dontrun{mpg.df=myread("EPAGAS.csv")}

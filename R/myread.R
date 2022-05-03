@@ -1,4 +1,6 @@
-#' Title
+#' myread
+#'
+#' Reads .csv files
 #'
 #' @param csv The name of a csv file
 #' @param dird The directory the file is in

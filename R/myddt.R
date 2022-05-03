@@ -23,6 +23,6 @@ myddt = function(df = ddt, SPECIES = "CCATFISH") {
 
   nlist <- list(ddt, df, table(ddt$RIVER)/length(ddt$RIVER))
   names(nlist) <- c("Raw data", "Subsetted data", "Relative Frequency of RIVER, raw data")
-  print(nlist)
+  invisible(list(nlist=nlist))
 
 }

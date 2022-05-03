@@ -26,5 +26,5 @@ A list of the confidence interval, the function, the sample, the experimental da
 Creates a Bootstrap sample from sample x and plots its statistics
 }
 \examples{
-myboot2(iter = 10000,x = c(0,1,3,), fun = "mean", alpha = 0.05, cx = 1.5)
+myboot2(iter = 10000,x = c(0,1,2,3), fun = "mean", alpha = 0.05, cx = 1.5)
 }

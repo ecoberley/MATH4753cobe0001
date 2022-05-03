@@ -12,7 +12,7 @@
 #' @return A list of the confidence interval, the function, the sample, the experimental dataframe created and formatted according to the function, and the experimental dataframe created.
 #' @export
 #'
-#' @examples myboot2(iter = 10000,x = c(0,1,3,), fun = "mean", alpha = 0.05, cx = 1.5)
+#' @examples myboot2(iter = 10000,x = c(0,1,2,3), fun = "mean", alpha = 0.05, cx = 1.5)
 myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){
   n=length(x)
 

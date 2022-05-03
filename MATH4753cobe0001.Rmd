@@ -1,0 +1,55 @@
+---
+title: "Vignette Title"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+  
+)
+```
+
+This package is a collection of functions that I have acquired over the semester in MATH 4753. The 4 that are the best documented are:
+
+- myboot2
+- myread
+- fiitts
+- myddt
+
+## myread
+
+```{r}
+library(MATH4753cobe0001)
+ddt <- myread("DDT.csv", "../Labs/DATA/")
+head(ddt)
+
+```
+
+## myddt
+
+```{r}
+myddt(ddt, "CCATFISH")
+```
+
+
+## myboot2
+
+```{r}
+myboot2(10000, x=ddt$DDT, fun="mean", alpha = 0.05)
+```
+
+## fitts
+
+```{r}
+fitts(x1 = 10, y1 = 15, x2 = 50, y2 = 76, width = 120)
+```
+
+
