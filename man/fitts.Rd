@@ -2,16 +2,27 @@
 % Please edit documentation in R/fitts.R
 \name{fitts}
 \alias{fitts}
-\title{Title}
+\title{Fitt's Distance}
 \usage{
 fitts(x1, y1, x2, y2, width)
 }
 \arguments{
-\item{width}{}
+\item{x1}{The x-coordinate of the first object}
+
+\item{y1}{The y-coordinate of the first object}
+
+\item{x2}{The x-coordinate of the second object}
+
+\item{y2}{The y-coordinate of the second object}
+
+\item{width}{The width of the second object}
 }
 \value{
-
+Formatted string of Fitts's distance, showing Movement Time, the regression coefficient, and the width of the element.
 }
 \description{
-Title
+Calculate the Fitt's distance from one element to another. For use in UX design.
+}
+\examples{
+fitts(x1 = 10, y1 = 15, x2 = 50, y2 = 76, width = 120)
 }

@@ -15,8 +15,8 @@ myddt(df = ddt, SPECIES = "CCATFISH")
 Named list of dataframe before subsetting, dataframe after subsetting, and relative frequency of RIVER values before subsetting
 }
 \description{
-myddt
+For use with the DDT dataset from Statistics for Engineering and the Sciences, 6th. Subsets the DDT dataframe.
 }
 \examples{
-\dontrun{myddt(ddt, "CCATFISH")}
+myddt(ddt, "CCATFISH")
 }
